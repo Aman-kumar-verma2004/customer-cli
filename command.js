@@ -19,21 +19,25 @@ const questions = [
     type: "input",
     name: "firstname",
     message: "Enter first name",
+    validate: (input) => input ? true : 'First name is required'
   },
   {
     type: "input",
     name: "lastname",
     message: "Enter last name",
+     validate: (input) => input ? true : 'Last name is required'
   },
   {
     type: "input",
     name: "phone",
     message: "Enter phone number",
+    validate: (input) => /^[0-9]+$/.test(input) ? true : 'Please enter a valid phone number'
   },
   {
     type: "input",
     name: "email",
     message: "Enter email ",
+    validate: (input) => /\S+@\S+\.\S+/.test(input) ? true : 'Please enter a valid email'
   },
 ];
 //Add Customer
