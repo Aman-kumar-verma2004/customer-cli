@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 const db = mongoose.connect(
-  "mongodb+srv://Ranger7280:Aman_3013@cluster0.hrrw02a.mongodb.net/Customer-CLI"
-);
+  ""
+);//write your own connection string
 
 const Customer = require("./Model/Customer");
 
